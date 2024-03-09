@@ -2,10 +2,25 @@
     --shadow: 1px 4px 5px 1px rgb(155, 133, 253), 2px 2px 5px 1px rgb(15, 36, 128);
 }
 
-body{
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: navy;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: aquamarine;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    background: linear-gradient(to bottom right, rgb(38, 80, 115),  rgb(45, 149, 150));
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom ,rgb(196, 220, 255), rgb(65,135,246));
 }
 
 #welcome{
@@ -83,13 +98,13 @@ h2{
 }
 
 #main-room{
+    background-color: whitesmoke;
     min-height: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 900px;
     width: 1000px;
     box-shadow: var(--shadow);
-    padding: 30px;
+    padding: 0;
+    margin: 0;
     border-radius: 30px;
     position: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -100,10 +115,12 @@ h2{
 }
 
 .control{
+    border-radius: 30px;
+    background-color: rgba(25, 94, 192, 0.726);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 94%;
     padding: 30px;
 }
 
@@ -116,5 +133,5 @@ h2{
 
 .control-icon:hover{
     cursor: pointer;
-    background-color: rgba(255, 169, 169, 0.555);
+    background-color: rgba(252, 37, 37, 0.555);
 }

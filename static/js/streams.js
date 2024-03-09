@@ -1,7 +1,7 @@
 const APP_ID = "bc14c6764ac5483d876542e689a9ae04";
 const CHANNEL = "main";
 const TOKEN =
-  "007eJxTYGB2TasXvyl8gv3kXYM90zyqmDhWWUkF6wvNuZvzK33V7vkKDEnJhibJZuZmJonJpiYWxikW5mamJkapZhaWiZaJqQYml7a+Sm0IZGT4fTySlZEBAkF8FobcxMw8BgYAvuAexw==";
+  "007eJxTYNhmvPnYYZHf2jn6tw8t/rQpxLmt4eTmHxVtTOpV8o1GkxYrMCQlG5okm5mbmSQmm5pYGKdYmJuZmhilmllYJlomphqYHPz1OrUhkJHhcXwsCyMDBIL4LAy5iZl5DAwAxNchRw==";
 let UID;
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
@@ -59,7 +59,7 @@ let handleUserJoined = async (user, mediaType) => {
 }
 
 let handleUserLeft = async (user) => {
-        delete remoteUsers[user,uid]
+        delete remoteUsers[user.uid]
         document.getElementById(`user-container-${user.uid}`).remove()
     }
 
